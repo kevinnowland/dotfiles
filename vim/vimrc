@@ -1,0 +1,71 @@
+syntax on
+filetype plugin indent on
+
+" remove backwards compatibility with vi that's not needed.
+" this probably doesn't do anything
+set nocompatible
+
+" security thing; i don't use modelines, won't be affected
+set modelines=0
+syntax on
+
+" colors
+set t_Co=256
+set background=dark
+if (has("termguicolors"))
+  set termguicolors
+ endif
+" colorscheme gruvbox
+
+" splits
+set splitbelow
+set splitright
+
+" F1 to toggle the file system
+nnoremap <F1> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+" F5 to ALEFix
+nnoremap <F5> :ALEFix<CR>
+
+" spaces by default.. sorry
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" search
+set hlsearch
+set incsearch
+nnoremap <silent> <Esc><Esc> :let @/=""<CR>
+set ignorecase
+set smartcase
+set showmatch
+
+" hit tab to go to matching paren
+nnoremap <Tab> %
+vnoremap <Tab> %
+
+" fix how j and k move lines
+nnoremap j gj
+nnoremap k gk
+
+" misc
+set encoding=utf-8
+set scrolloff=3
+set visualbell
+set t_vb=
+set hidden
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set relativenumber
+set ruler
+set nofoldenable
+set backspace=indent,eol,start
+
+" preserve line number
+autocmd BufReadPost *
+			\ if line("'\"") > 0 && line("'\"") <= line("$") |
+			\   exe "normal! g`\"" |
+			\ endif

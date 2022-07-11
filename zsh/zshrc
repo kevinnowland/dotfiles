@@ -1,0 +1,9 @@
+# aliases
+if [[ -f ~/.dotfiles/zsh/zsh_aliases ]]; then
+    source ~/.dotfiles/zsh/zsh_aliases
+fi
+
+# job stuff
+if [[ -f ~/.dotfiles/zsh/zshrc_work ]]; then
+	source ~/.dotfiles/zsh/zshrc_work
+fi
