@@ -1,0 +1,3 @@
+function dbash () {
+  docker run --rm -it -e TERM $1 /bin/bash
+}
