@@ -27,6 +27,6 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # plugins
-for file in ~/.dotfiles/zsh/plugins; do
-    source "$file"
+for file in ~/.dotfiles/zsh/plugins/*; do
+  source "$file"
 done
