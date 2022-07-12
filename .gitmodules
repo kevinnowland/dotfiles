@@ -1,3 +1,9 @@
 [submodule "vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "vim/bundle/everforest"]
+	path = vim/bundle/everforest
+	url = https://github.com/sainnhe/everforest
+[submodule "vim/bundle/iceberg.vim"]
+	path = vim/bundle/iceberg.vim
+	url = https://github.com/cocopon/iceberg.vim
