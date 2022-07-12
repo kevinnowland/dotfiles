@@ -26,18 +26,13 @@ fi
 
 
 #local return_code="%(?..%F{red}%? ↵%f)"
-#
 local user_host="${PR_USER}${PR_HOST}"
 local current_dir="%F{130}%~%f"
 local git_branch='$(git_super_status)'
-#
-#PROMPT=" ${user_host} ${current_dir} 
-#$PR_PROMPT"
-PROMPT=" ${user_host} ${current_dir} \$(ruby_prompt_info) ${git_branch}
+
+# the actual prompt
+PROMPT=" ${user_host} ${current_dir} ${git_branch}
 $PR_PROMPT"
-RPROMPT="${return_code}"
-#
-ZSH_THEME_RUBY_PROMPT_PREFIX="%F{red}‹"
-ZSH_THEME_RUBY_PROMPT_SUFFIX="›%f"
+
 
 }

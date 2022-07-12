@@ -5,7 +5,6 @@ fi
 
 # theme
 source ~/.dotfiles/zsh/themes/zsh-git-prompt/zshrc.sh
-source ~/.dotfiles/zsh/themes/prompt_info_functions.zsh
 source ~/.dotfiles/zsh/themes/kevin.zsh-theme
 
 # completions
