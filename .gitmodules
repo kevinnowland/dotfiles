@@ -7,3 +7,27 @@
 [submodule "vim/bundle/iceberg.vim"]
 	path = vim/bundle/iceberg.vim
 	url = https://github.com/cocopon/iceberg.vim
+[submodule "vim/bundle/night-owl.vim"]
+	path = vim/bundle/night-owl.vim
+	url = https://github.com/haishanh/night-owl.vim
+[submodule "vim/bundle/vim-fahrenheit"]
+	path = vim/bundle/vim-fahrenheit
+	url = https://github.com/fcpg/vim-fahrenheit
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "vim/bundle/ale"]
+	path = vim/bundle/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/preservim/vim-markdown
+[submodule "vim/bundle/vim-terraform"]
+	path = vim/bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform
+[submodule "vim/bundle/Dockerfile.vim"]
+	path = vim/bundle/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim
+[submodule "vim/bundle/vim-python-pep8-indent"]
+	path = vim/bundle/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent
