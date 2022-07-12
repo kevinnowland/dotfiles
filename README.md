@@ -16,6 +16,16 @@ ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
 
+### YouCompleteMe - Mac
+
+To install the vim plugin YouCompleteME you then have to (on mac)
+```bash
+brew install cmake python go nodejs
+cd vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+python install.py --all
+```
+
 ## Things to install
 
 ### General
