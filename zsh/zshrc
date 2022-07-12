@@ -10,7 +10,7 @@ fi
 
 # custom functions
 fpath=( ~/.dotfiles/zsh/functions "${fpath[@]}" )
-autoload -U $fpath[1]/*(.:t)
+autoload -Uz $fpath[1]/*(.:t)
 
 # mcfly
 eval "$(mcfly init zsh)"
