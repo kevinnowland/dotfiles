@@ -48,3 +48,5 @@ if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
 	source ~/.dotfiles/zsh/zshrc_extra
 fi
 
+# ls colors
+export CLICOLOR=1
