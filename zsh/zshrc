@@ -3,25 +3,10 @@ if [[ -f ~/.dotfiles/zsh/aliases ]]; then
     source ~/.dotfiles/zsh/aliases
 fi
 
-# job stuff
-if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
-	source ~/.dotfiles/zsh/zshrc_extra
-fi
-
-# custom functions
-fpath=(
-  ~/.dotfiles/zsh/functions 
-  ~/.dotfiles/zsh/functions/extra
-  ~/.dotfiles/zsh/completion
-  "${fpath[@]}"
-)
-autoload -Uz $fpath[1]/*(.:t)
-autoload -Uz $fpath[2]/*(.:t)
-autoload -Uz $fpath[3]/*(.:t)
-
 # completions
-source <(kubectl completion zsh)
+autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit -i
+source <(kubectl completion zsh)
 
 # mcfly
 eval "$(mcfly init zsh)"
@@ -39,3 +24,20 @@ eval $(thefuck --alias)
 for file in ~/.dotfiles/zsh/plugins/*; do
   source "$file"
 done
+
+# custom functions
+fpath=(
+  ~/.dotfiles/zsh/functions 
+  ~/.dotfiles/zsh/functions/extra
+  ~/.dotfiles/zsh/completion
+  "${fpath[@]}"
+)
+autoload -Uz $fpath[1]/*(.:t)
+autoload -Uz $fpath[2]/*(.:t)
+autoload -Uz $fpath[3]/*(.:t)
+
+# extras not in git ignore
+if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
+	source ~/.dotfiles/zsh/zshrc_extra
+fi
+
