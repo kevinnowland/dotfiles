@@ -21,7 +21,7 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
  endif
-colorscheme everforest
+colorscheme night-owl
 
 " splits
 set splitbelow

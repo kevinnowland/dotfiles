@@ -34,3 +34,6 @@
 [submodule "vim/bundle/YouCompleteMe"]
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "vim/bundle/nord-vim"]
+	path = vim/bundle/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
