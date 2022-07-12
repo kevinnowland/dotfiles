@@ -16,15 +16,25 @@ ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
 
-### YouCompleteMe - Mac
+### Vim
+
+To install a vim plugin:
+
+```bash
+cd vim/bundle
+git submodule add URL_FOR_SUBMODULE
+```
+
+#### YouCompleteMe
 
 To install the vim plugin YouCompleteME you then have to (on mac)
 ```bash
-brew install cmake python go nodejs
-cd vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 python install.py --all
 ```
+
+Then you might have to do all sorts of things, like re-install vim with
+python support, etc.
 
 ## Things to install
 
