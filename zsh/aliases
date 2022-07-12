@@ -8,6 +8,7 @@ alias k="kubectl"
 alias la="ls -a"
 alias prev="open -a preview"
 alias sz="source ~/.zshrc"
+alias tf="terraform"
 
 # git
 alias g="git"

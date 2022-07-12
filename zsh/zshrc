@@ -20,6 +20,7 @@ autoload -Uz $fpath[2]/*(.:t)
 autoload -Uz $fpath[3]/*(.:t)
 
 # completions
+source <(kubectl completion zsh)
 autoload -Uz compinit && compinit -i
 
 # mcfly
