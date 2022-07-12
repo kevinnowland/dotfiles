@@ -3,6 +3,9 @@ if [[ -f ~/.dotfiles/zsh/aliases ]]; then
     source ~/.dotfiles/zsh/aliases
 fi
 
+# theme
+source ~/.dotfiles/zsh/themes/kevin.zsh-theme
+
 # completions
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit -i
@@ -28,13 +31,15 @@ done
 # custom functions
 fpath=(
   ~/.dotfiles/zsh/functions 
+  ~/.dotfiles/zsh/functions/omz
   ~/.dotfiles/zsh/functions/extra
   ~/.dotfiles/zsh/completion
-  "${fpath[@]}"
+  $fpath
 )
 autoload -Uz $fpath[1]/*(.:t)
 autoload -Uz $fpath[2]/*(.:t)
 autoload -Uz $fpath[3]/*(.:t)
+autoload -Uz $fpath[4]/*(.:t)
 
 # extras that are in .gitignore
 if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
