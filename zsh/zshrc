@@ -12,6 +12,9 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit -i
 source <(kubectl completion zsh)
 
+# suggestions
+source ~/.dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # mcfly
 eval "$(mcfly init zsh)"
 

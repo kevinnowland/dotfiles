@@ -40,3 +40,6 @@
 [submodule "zsh/themes/zsh-git-prompt"]
 	path = zsh/themes/zsh-git-prompt
 	url = https://github.com/kevinnowland/zsh-git-prompt
+[submodule "zsh/zsh-autosuggestions"]
+	path = zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions

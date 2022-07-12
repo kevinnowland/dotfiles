@@ -43,6 +43,7 @@ python support, etc.
 1. tmux
 2. [mcfly](https://github.com/cantino/mcfly)
 3. [thefuck](https://github.com/nvbn/thefuck#installation)
+4. [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
 ### Maybe work related
 
