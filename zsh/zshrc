@@ -9,8 +9,13 @@ if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
 fi
 
 # custom functions
-fpath=( ~/.dotfiles/zsh/functions "${fpath[@]}" )
+fpath=(
+  ~/.dotfiles/zsh/functions 
+  ~/.dotfiles/zsh/functions/extra
+  "${fpath[@]}"
+)
 autoload -Uz $fpath[1]/*(.:t)
+autoload -Uz $fpath[2]/*(.:t)
 
 # mcfly
 eval "$(mcfly init zsh)"
