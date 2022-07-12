@@ -29,15 +29,15 @@ fi
 #
 local user_host="${PR_USER}${PR_HOST}"
 local current_dir="%F{130}%~%f"
-#local git_branch='$(git_super_status)'
+local git_branch='$(git_super_status)'
 #
-PROMPT=" ${user_host} ${current_dir} 
-$PR_PROMPT"
-#PROMPT=" ${user_host} ${current_dir} \$(ruby_prompt_info) ${git_branch}
+#PROMPT=" ${user_host} ${current_dir} 
 #$PR_PROMPT"
-#RPROMPT="${return_code}"
+PROMPT=" ${user_host} ${current_dir} \$(ruby_prompt_info) ${git_branch}
+$PR_PROMPT"
+RPROMPT="${return_code}"
 #
-#ZSH_THEME_RUBY_PROMPT_PREFIX="%F{red}‹"
-#ZSH_THEME_RUBY_PROMPT_SUFFIX="›%f"
+ZSH_THEME_RUBY_PROMPT_PREFIX="%F{red}‹"
+ZSH_THEME_RUBY_PROMPT_SUFFIX="›%f"
 
 }

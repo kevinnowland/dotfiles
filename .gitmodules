@@ -37,3 +37,6 @@
 [submodule "vim/bundle/nord-vim"]
 	path = vim/bundle/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim
+[submodule "zsh/themes/zsh-git-prompt"]
+	path = zsh/themes/zsh-git-prompt
+	url = https://github.com/olivierverdier/zsh-git-prompt
