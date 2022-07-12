@@ -2,7 +2,7 @@
 set rtp+=~/.dotfiles/vim
 
 " pathogen
-execute pathogen#infect('~/.dotfiles/vim/bundle')
+execute pathogen#infect('~/.dotfiles/vim/bundle/{}')
 
 syntax on
 filetype plugin indent on
@@ -21,7 +21,7 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
  endif
-" colorscheme gruvbox
+colorscheme gruvbox
 
 " splits
 set splitbelow
