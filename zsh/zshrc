@@ -8,17 +8,19 @@ if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
 	source ~/.dotfiles/zsh/zshrc_extra
 fi
 
-# completions
-autoload -U compinit; compinit
-
 # custom functions
 fpath=(
   ~/.dotfiles/zsh/functions 
   ~/.dotfiles/zsh/functions/extra
+  ~/.dotfiles/zsh/completion
   "${fpath[@]}"
 )
 autoload -Uz $fpath[1]/*(.:t)
 autoload -Uz $fpath[2]/*(.:t)
+autoload -Uz $fpath[3]/*(.:t)
+
+# completions
+autoload -Uz compinit && compinit -i
 
 # mcfly
 eval "$(mcfly init zsh)"
