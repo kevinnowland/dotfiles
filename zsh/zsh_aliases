@@ -1,5 +1,6 @@
 alias c="clear"
 alias cdc="cd ~/code"
+alias d="docker"
 alias dc="docker compose"
 alias ipy="ipython"
 alias k="kubectl"
