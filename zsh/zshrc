@@ -36,7 +36,7 @@ autoload -Uz $fpath[1]/*(.:t)
 autoload -Uz $fpath[2]/*(.:t)
 autoload -Uz $fpath[3]/*(.:t)
 
-# extras not in git ignore
+# extras that are in .gitignore
 if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
 	source ~/.dotfiles/zsh/zshrc_extra
 fi
