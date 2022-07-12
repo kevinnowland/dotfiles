@@ -4,6 +4,14 @@ if [[ -f ~/.dotfiles/zsh/zsh_aliases ]]; then
 fi
 
 # job stuff
-if [[ -f ~/.dotfiles/zsh/zshrc_work ]]; then
-	source ~/.dotfiles/zsh/zshrc_work
+if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
+	source ~/.dotfiles/zsh/zshrc_extra
 fi
+
+# mcfly
+eval "$(mcfly init zsh)"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

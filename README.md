@@ -1,5 +1,8 @@
 # Dotfiles
 
+Dotifiles for zsh, vim, tmux.
+
+Put laptop specific things in `zsh/zshrc_extra`
 
 ## Installation
 
@@ -15,8 +18,13 @@ ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 ## Things to install
 
-1. tmux
-2. pyenv
-3. tfenv
-4. docker
+### General
 
+1. tmux
+2. [mcfly](https://github.com/cantino/mcfly)
+
+### Maybe work related
+
+1. tfenv
+2. docker
+3. pyenv
