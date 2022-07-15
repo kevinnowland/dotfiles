@@ -1,3 +1,0 @@
-function get_token () {
-  python -c "from brokkr.models.auth import get_token; print(get_token('$1'))"
-}
