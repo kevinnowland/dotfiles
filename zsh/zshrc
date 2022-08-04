@@ -36,14 +36,21 @@ done
 fpath=(
   ~/.dotfiles/zsh/functions 
   ~/.dotfiles/zsh/functions/omz
-  ~/.dotfiles/zsh/functions/extra
   ~/.dotfiles/zsh/completion
   $fpath
 )
 autoload -Uz $fpath[1]/*(.:t)
 autoload -Uz $fpath[2]/*(.:t)
 autoload -Uz $fpath[3]/*(.:t)
-autoload -Uz $fpath[4]/*(.:t)
+
+# if extra functions
+if [[ -d ~/.dotfiles/zsh/functions/extra ]]; then
+  fpath=(
+    ~/.dotfiles/zsh/functions/extra
+    $fpath
+  )
+  autoload -Uz $fpath[1]/*(.:t)
+fi
 
 # extras that are in .gitignore
 if [[ -f ~/.dotfiles/zsh/zshrc_extra ]]; then
