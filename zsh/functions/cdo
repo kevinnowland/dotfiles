@@ -1,5 +1,0 @@
-function cdo () {
-  tmp=$PWD
-  cd $OLDPWD
-  export OLDPWD=$temp
-}
