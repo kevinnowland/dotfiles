@@ -16,6 +16,13 @@ ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
 
+Also need to initialize submodules:
+```bash
+cd .dotfiles
+git submodule init
+git submodule update
+```
+
 ### Vim
 
 To install a vim plugin:
