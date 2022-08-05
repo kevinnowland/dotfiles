@@ -19,8 +19,7 @@ ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 Also need to initialize submodules:
 ```bash
 cd .dotfiles
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 ### Vim
