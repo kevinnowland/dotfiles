@@ -46,13 +46,11 @@ eval "$(pyenv init -)"
 # custom functions
 fpath=(
   ~/.dotfiles/zsh/functions 
-  ~/.dotfiles/zsh/functions/omz
   ~/.dotfiles/zsh/completion
   $fpath
 )
 autoload -Uz $fpath[1]/*(.:t)
 autoload -Uz $fpath[2]/*(.:t)
-autoload -Uz $fpath[3]/*(.:t)
 
 # completions
 autoload bashcompinit && bashcompinit
